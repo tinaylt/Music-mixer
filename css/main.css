@@ -1,0 +1,61 @@
+* {
+    margin: 0 auto;
+}
+
+html {
+    max-width: 1200px;
+}
+
+
+body {
+    background-color: black;
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+
+body img {
+    width: 75%;
+}
+
+  .hidden {
+    display: none;
+  }
+
+  .background {
+    position: absolute;
+  }
+
+  .logo {
+    position: absolute;
+    width: 400px;
+    padding-top: 40px;
+  }
+
+  .donut1 {
+    position: relative;
+    width: 280px;
+    left: -150px;
+    top: 200px;
+}
+
+.donut2 {
+    position: relative;
+    width: 250px;
+    left: -500px;
+    top: 100px
+}
+
+.donut3 {
+    position: relative;
+    width: 200px;
+    left: -150px;
+    top: 150px;
+}
+
+.yum {
+    position: relative;
+    width: 400px;
+    top: -260px;
+    left: -180px;
+}

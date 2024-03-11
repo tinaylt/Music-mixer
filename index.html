@@ -10,29 +10,35 @@
         <header>
             <H2 class="hidden">WELCOME</H2>
         </header>
+
         <div class="l-col-span-full">
             <object data="images/backdrop.svg" type="image/svg+xml"></object>
         </div>
         
-        <div class="style drop-zone">
+        <section id="music-board">
+        <div class="drop-board">
             <!-- <h3>Ranking:</h3> -->
-            <div class="box zone1"></div>
-            <div class="box zone2"></div>
-            <div class="box zone3"></div>
-            <div class="box zone4"></div>
+            <div class="drop-zone zone1"></div>
+            <div class="drop-zone zone2"></div>
+            <div class="drop-zone zone3"></div>
+            <div class="drop-zone zone4"></div>
         </div>
 
         <div class="box1 drag-zone">
             <h4>Please choose your favourite <span>DONUTS</span> and drop it to the left side!</h4>
             <img src="images/drag-donut1.svg" alt="donut-svg">
-            <img src="images/drag-donut2.svg" alt="donut-svg">
-            <img src="images/drag-donut3.svg" alt="donut-svg">
-            <img src="images/drag-donut4.svg" alt="donut-svg">
-            <img src="images/drag-donut5.svg" alt="donut-svg">
-            <img src="images/drag-donut6.svg" alt="donut-svg">
+            <audio id="audioA1" src="assets/audio/audio1.mp3" controls loop></audio>
+           
+            <img data-trackref="audio2" src="images/drag-donut2.svg" alt="donut-svg" class="track-ref">
+            <img data-trackref="audio3" src="images/drag-donut3.svg" alt="donut-svg" class="track-ref">
+            <img data-trackref="audio4" src="images/drag-donut4.svg" alt="donut-svg" class="track-ref">
+            <img data-trackref="audio5" src="images/drag-donut5.svg" alt="donut-svg" class="track-ref">
+            <img data-trackref="audio6" src="images/drag-donut6.svg" alt="donut-svg" class="track-ref">
             <img src="images/drag-donut7.svg" alt="donut-svg">
         </div>
 
+    </section>
+    <script src="js/main.js"></script>
     </body>
 
 

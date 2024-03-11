@@ -2,6 +2,7 @@ let theDonut = document.querySelectorAll(".drag-zone img"),
     dropZone = document.querySelectorAll(".drop-zone"),
     draggedDonut;
 
+//Drag and Drop function://
 
     function handleStartDrag() {
         console.log('start drag this!', this);
@@ -14,9 +15,16 @@ let theDonut = document.querySelectorAll(".drag-zone img"),
     }
 
     function handleDrop(event) {
-        event.preventDefault();
-        console.log('dropped on the Zone');
-        this.appendChild(draggedDonut);
+
+        if (this.firstElementChild === null) {
+            event.preventDefault();
+            console.log('dropped on the Zone');
+            this.appendChild(draggedDonut);
+        }
+
+        else {
+            return draggedDonut;
+        }
     }
 
 

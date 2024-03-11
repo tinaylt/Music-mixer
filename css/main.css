@@ -126,7 +126,6 @@ body, p, h1, h2, h3, h4, h5 {
   margin-bottom: 10px;
 }
 
-
  .drop-zone img {
 	position: relative;
   width: 100%;
@@ -134,3 +133,11 @@ body, p, h1, h2, h3, h4, h5 {
   padding: 0;
 }
 
+/*exit button option 1*/
+.drop-zone::after {
+  content: "x";
+  color: white;
+  position: absolute;
+  font-size: 30px;
+  cursor: pointer;
+}

@@ -21,6 +21,8 @@ body, p, h1, h2, h3, h4, h5 {
    padding: 0px;
 }
 
+
+
 /*Add Grid CSS*/
 
 .grid-con { 
@@ -79,18 +81,11 @@ body, p, h1, h2, h3, h4, h5 {
    display: none;
 }
 
-.style {
+.drop-board {
   position: absolute;
   left: 62%;
   top: 17%;
   height: 90%;
-}
-
-.box {
-  border: 2px dashed lightblue;
-  padding: 75px 90px;
-  margin-bottom: 10px;
-  box-shadow: 6px 3px darkblue;
 }
 
  .box1 {
@@ -115,3 +110,27 @@ body, p, h1, h2, h3, h4, h5 {
   font-size: 20px;
   color: lightsalmon;
  }
+
+ audio {
+  opacity: 30%;
+  display: none;
+ }
+
+/*after drop*/
+
+.drop-zone {
+  border: 2px dashed lightblue;
+  width: 200px;
+  height: 200px;
+  box-shadow: 6px 3px darkblue;
+  margin-bottom: 10px;
+}
+
+
+ .drop-zone img {
+	position: relative;
+  width: 100%;
+  left: 5%;
+  padding: 0;
+}
+

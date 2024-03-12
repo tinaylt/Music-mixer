@@ -25,6 +25,7 @@ body, p, h1, h2, h3, h4, h5 {
 
 /*Add Grid CSS*/
 
+
 .grid-con { 
   display: grid; 
   grid-template-columns: repeat(12, minmax(0, 1fr));
@@ -83,8 +84,8 @@ body, p, h1, h2, h3, h4, h5 {
 
 .drop-board {
   position: absolute;
-  left: 62%;
-  top: 17%;
+  left: 64%;
+  top: 12%;
   height: 90%;
 }
 
@@ -92,13 +93,23 @@ body, p, h1, h2, h3, h4, h5 {
    color: white;
    border-radius: 5px;
    position: absolute;
-   left: 77%;
+   left: 78%;
    width: 13%;
-   height: 100%;
-   top: 15%;
+   height: 80%;
+   top: 13%;
    overflow: scroll;
    padding-left: 5px;
  }
+
+.close {
+  color: lightblue;
+  cursor: pointer;
+  /* font-size: 1.5rem; */
+  text-align: right;
+  /* position: absolute;
+  right: 3%; */
+}
+
 
  .box1 h4 {
   padding-bottom: 10px;
@@ -111,33 +122,30 @@ body, p, h1, h2, h3, h4, h5 {
   color: lightsalmon;
  }
 
- audio {
-  opacity: 30%;
-  display: none;
- }
 
 /*after drop*/
 
 .drop-zone {
   border: 2px dashed lightblue;
-  width: 200px;
-  height: 200px;
+  width: 160px;
+  height: 160px;
   box-shadow: 6px 3px darkblue;
-  margin-bottom: 10px;
+  margin-bottom: 3px;
 }
 
  .drop-zone img {
 	position: relative;
   width: 100%;
-  left: 5%;
+  left: 4%;
   padding: 0;
 }
 
+
 /*exit button option 1*/
-.drop-zone::after {
+/* .drop-zone::after {
   content: "x";
   color: white;
   position: absolute;
   font-size: 30px;
   cursor: pointer;
-}
+} */

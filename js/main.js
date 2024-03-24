@@ -32,7 +32,7 @@ let theDonut = document.querySelectorAll(".drag-zone img"),
             this.appendChild(draggedDonut);
             theAudio.currentTime = 0;
             // theAudio.loop = true;
-            theAudio.classList.remove('.hidden');
+            // theAudio.classList.remove('.hidden');
             theAudio.play();
             
         }

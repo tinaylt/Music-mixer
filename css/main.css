@@ -7,8 +7,9 @@ html {
   box-sizing: border-box; 
   background-color: black;
   height: auto;
-  width: 90%;
   margin: auto;  
+  width: 90%; 
+  max-height: 300px;
 }
 
 *, *::before, *::after {
@@ -21,97 +22,65 @@ body, p, h1, h2, h3, h4, h5 {
    padding: 0px;
 }
 
-
-
-/*Add Grid CSS*/
-
-
 .grid-con { 
   display: grid; 
-  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   grid-column-gap: 15px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-.l-col-span-1	{grid-column: span 1 / span 1;}
-.l-col-span-2	{grid-column: span 2 / span 2;}
-.l-col-span-3	{grid-column: span 3 / span 3;}
-.l-col-span-4	{grid-column: span 4 / span 4;}
-.l-col-span-5	{grid-column: span 5 / span 5;}
-.l-col-span-6	{grid-column: span 6 / span 6;}
-.l-col-span-7	{grid-column: span 7 / span 7;}
-.l-col-span-8	{grid-column: span 8 / span 8;}
-.l-col-span-9	{grid-column: span 9 / span 9;}
-.l-col-span-10 {grid-column: span 10 / span 10;}
-.l-col-span-11 {grid-column: span 11 / span 11;}
-.l-col-span-12 {grid-column: span 12 / span 12;}
-.l-col-span-full {grid-column: 1 / -1;}
-
-.l-col-start-1	{grid-column-start: 1;}
-.l-col-start-2	{grid-column-start: 2;}
-.l-col-start-3	{grid-column-start: 3;}
-.l-col-start-4	{grid-column-start: 4;}
-.l-col-start-5	{grid-column-start: 5;}
-.l-col-start-6	{grid-column-start: 6;}
-.l-col-start-7	{grid-column-start: 7;}
-.l-col-start-8	{grid-column-start: 8;}
-.l-col-start-9	{grid-column-start: 9;}
-.l-col-start-10	{grid-column-start: 10;}
-.l-col-start-11	{grid-column-start: 11;}
-.l-col-start-12	{grid-column-start: 12;}
-.l-col-start-13	{grid-column-start: 13;}
-
-.l-col-end-1	{grid-column-end: 1;}
-.l-col-end-2	{grid-column-end: 2;}
-.l-col-end-3	{grid-column-end: 3;}
-.l-col-end-4	{grid-column-end: 4;}
-.l-col-end-5	{grid-column-end: 5;}
-.l-col-end-6	{grid-column-end: 6;}
-.l-col-end-7	{grid-column-end: 7;}
-.l-col-end-8	{grid-column-end: 8;}
-.l-col-end-9	{grid-column-end: 9;}
-.l-col-end-10	{grid-column-end: 10;}
-.l-col-end-11	{grid-column-end: 11;}
-.l-col-end-12	{grid-column-end: 12;}
-.l-col-end-13	{grid-column-end: 13;}
-
-/*Main CSS*/
+.col-span-full {grid-column: 1 / -1;}
 
 .hidden {
-   display: none;
+  display: none;
 }
 
 .drop-board {
   position: absolute;
-  left: 64%;
-  top: 12%;
-  height: 90%;
+  left: 61%;
+  top: 10%;
+  height: 20%;
 }
 
  .box1 {
    color: white;
    border-radius: 5px;
    position: absolute;
-   left: 78%;
-   width: 13%;
-   height: 80%;
-   top: 13%;
+   left: 77%;
+   width: 15%;
+   height: 450px;
+   top: 12%;
    overflow: scroll;
    padding-left: 5px;
  }
 
+.drop-zone {
+  border: 2px dashed lightblue;
+  width: 100px;
+  height: 100px;
+  box-shadow: 6px 3px darkblue;
+  border-radius: 50%;
+}
+
+ .drop-zone img {
+	position: relative;
+  width: 100%;
+  left: 4%;
+  padding: 0;
+}
+
 .close {
   color: lightblue;
   cursor: pointer;
-  /* font-size: 1.5rem; */
   text-align: right;
+  /* font-size: 1.5rem; */
   /* position: absolute;
-  right: 3%; */
+    right: 3%; */
 }
 
 
- .box1 h4 {
+.box1 h4 {
   padding-bottom: 10px;
   font-family:Arial, Helvetica, sans-serif;
   font-size: 12px;
@@ -123,14 +92,47 @@ body, p, h1, h2, h3, h4, h5 {
  }
 
 
+@media screen and (min-width: 768px) {
+
+/*Add Grid CSS*/
+
+.grid-con { 
+  display: grid; 
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-column-gap: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.m-col-span-full {grid-column: 1 / -1;}
+
+/*Main CSS*/
+
+html {
+  width: 90%;
+}
+
+.drop-board {
+  left: 60%;
+  top: 8%;
+  height: 20%;
+}
+
+ .box1 {
+   left: 75%;
+   width: 16%;
+   height: 80%;
+   top: 10%;
+ }
+
 /*after drop*/
 
 .drop-zone {
   border: 2px dashed lightblue;
-  width: 160px;
-  height: 160px;
+  width: 120px;
+  height: 120px;
   box-shadow: 6px 3px darkblue;
-  margin-bottom: 3px;
+  border-radius: 50%;
 }
 
  .drop-zone img {
@@ -139,8 +141,7 @@ body, p, h1, h2, h3, h4, h5 {
   left: 4%;
   padding: 0;
 }
-
-
+}
 /*exit button option 1*/
 /* .drop-zone::after {
   content: "x";
@@ -149,3 +150,41 @@ body, p, h1, h2, h3, h4, h5 {
   font-size: 30px;
   cursor: pointer;
 } */
+
+@media screen and (min-width: 1200px) {
+  .grid-con { 
+    display: grid; 
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    grid-column-gap: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .l-col-span-full {grid-column: 1 / -1;}
+
+  html {
+    width: 90%;
+  }
+
+  .drop-board {
+    left: 60%;
+    top: 15%;
+    height: 20%;
+  }
+  
+   .box1 {
+     left: 75%;
+     width: 13%;
+     height: 80%;
+     top: 17%;
+   }
+
+   .drop-zone {
+    width: 180px;
+    height: 180px;
+  }
+  
+   .drop-zone img {
+    left: 3%;
+  }
+}

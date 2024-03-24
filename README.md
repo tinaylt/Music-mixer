@@ -1,4 +1,4 @@
-# Drag your favourite Donuts (Music MIxer project)
+# Drag your favourite Donuts (Music Mixer project)
 This is an Multimedia Authoring class homework.
 
 ## Installation
